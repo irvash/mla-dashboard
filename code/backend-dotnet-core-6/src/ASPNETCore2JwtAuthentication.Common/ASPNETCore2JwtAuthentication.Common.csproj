@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <!--        <LangVersion>9.0</LangVersion>-->
+
+        <!--        <ImplicitUsings>disable</ImplicitUsings>-->
+        <!--        <Nullable>disable</Nullable>-->
+
+        <!--        <NoWarn>1073</NoWarn>-->
+        <!--        <NoWarn>CA1040</NoWarn>-->
+
+
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.2"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.2"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.2"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2"/>
+
+
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0"/>
+        <PackageReference Include="AutoMapper" Version="11.0.1"/>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0"/>
+        <PackageReference Include="ElmahCore" Version="2.1.1"/>
+        <PackageReference Include="ElmahCore.Sql" Version="2.1.1"/>
+
+        <PackageReference Include="Pluralize.NET" Version="1.0.2"/>
+
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.2"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.2"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3"/>
+
+
+        <PackageReference Include="DNTPersianUtils.Core" Version="5.3.0"/>
+        <PackageReference Include="DNTCommon.Web.Core" Version="2.9.4"/>
+
+        <PackageReference Include="NLog.Web.AspNetCore" Version="4.14.0"/>
+        <PackageReference Include="Sentry.NLog" Version="3.13.0"/>
+
+    </ItemGroup>
+
+</Project>

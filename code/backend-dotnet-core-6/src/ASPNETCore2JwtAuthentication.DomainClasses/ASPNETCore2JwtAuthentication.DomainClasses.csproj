@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    
+    <NoWarn>RCS1090</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ASPNETCore2JwtAuthentication.Common\ASPNETCore2JwtAuthentication.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Base" />
+  </ItemGroup>
+
+</Project>

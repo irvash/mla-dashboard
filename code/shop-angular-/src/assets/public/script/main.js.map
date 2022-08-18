@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["console","log"],"mappings":"AAAAA,QAAAC,IAAA,sBACAD,QAAAC,IAAA","file":"main.js","sourcesContent":["console.log('We have JavaScript');\r\nconsole.log('YES');"]}

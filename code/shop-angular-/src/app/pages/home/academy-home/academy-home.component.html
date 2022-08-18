@@ -1,0 +1,86 @@
+<section
+  id="team-section"
+  class="team_section"
+  data-section-title="تیم ما"
+>
+  <div class="line_grey"></div>
+  <div class="wrapper">
+    <h3 class="section_title">کادر آکادمی</h3>
+    <ul class="team_block_list">
+      <ng-container *ngFor="let item of this.list">
+        <li class="team_block_item">
+          <a href="#" class="team_block_link" [attr.alt]="item.altAttribute">
+            <!-- style="background-image: url('');"           -->
+            <div
+              class="img_holder"
+              [ngStyle]="{'background-image': 'url(' + item.picName + ')'}"
+
+            ></div>
+            <span class="section_title">{{item.name}}</span>
+            <p>
+              {{item.jobPosition}}
+            </p>
+          </a>
+        </li>
+
+      </ng-container>
+
+    </ul>
+    <a href="#" class="link red_link"
+    >کادر آموزشی و اجرایی مجرب و متخصص آکادمی زبان مهرداد را بیشتر
+      بشناسید</a
+    >
+  </div>
+  <div class="line_grey"></div>
+</section>
+
+<!--
+<li class="team_block_item">
+  <a href="#" class="team_block_link">
+    <div
+      class="img_holder"
+      style="
+                      background-image: url('assets/public/assets/images/dummy/Gordan.jpg');
+                    "
+    ></div>
+    <span class="section_title">سوگل گردان</span>
+    <p>پذیرش پیش دبستان</p>
+  </a>
+</li>
+<li class="team_block_item">
+  <a href="#" class="team_block_link">
+    <div
+      class="img_holder"
+      style="
+                      background-image: url('assets/public/assets/images/dummy/Moazemi.jpg');
+                    "
+    ></div>
+    <span class="section_title">شایان معظمی</span>
+    <p>پذیرش پیش دبستان</p>
+  </a>
+</li>
+<li class="team_block_item">
+  <a href="#" class="team_block_link">
+    <div
+      class="img_holder"
+      style="
+                      background-image: url('assets/public/assets/images/dummy/saleh1.jpg');
+                    "
+    ></div>
+    <span class="section_title">سمانه صالح</span>
+    <p>پشتیبان دپارتمان خردسالان</p>
+  </a>
+</li>
+<li class="team_block_item">
+  <a href="#" class="team_block_link">
+    <div
+      class="img_holder"
+      style="
+                      background-image: url('assets/public/assets/images/dummy/zahra.jpg');
+                    "
+    ></div>
+    <span class="section_title">زهرا نصیری</span>
+    <p>مدرس</p>
+  </a>
+</li>
+ -->

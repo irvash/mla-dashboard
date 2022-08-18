@@ -1,0 +1,198 @@
+<section
+  id="departments-section"
+  class="department_section"
+  data-section-title="دپارتمان ها"
+>
+  <div class="wrapper x_margin_auto">
+    <div class="department_section_title text_align_center">
+      <img
+        src="'assets/public/assets/images/courthouse.svg"
+        class="inline-block"
+        alt=""
+      />
+      <h1>دپارتمان های تخصصی آکادمی زبان مهرداد</h1>
+    </div>
+    <div class="department_carousel_wrapper">
+      <div class="department_carousel">
+<!--        <div class="">-->
+
+          <swiper
+            #swiperRef
+            [slidesPerView]="4"
+            [centeredSlides]="false"
+            [spaceBetween]="25"
+            [navigation]="false"
+            class=""
+          >
+            <ng-container *ngFor="let item of this.list">
+              <ng-template swiperSlide>
+                <div class="department_item swiper-slide">
+                  <div class="header">
+                    <div class="icon">
+                      <img [src]="item.picName" alt="">
+                    </div>
+                    <div class="line"></div>
+                    <div class="title">
+                      {{this.contentWithLanguage(item.title, item.titleEn)}}
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      {{this.contentWithLanguage(item.shortDescription, item.shortDescriptionEn)}}
+                    </p>
+                  </div>
+                  <div class="link_wrapper">
+                    <a href="" class="arrow_link fi-arrow-left"></a>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+<!--
+            <ng-template swiperSlide>
+              <div class="department_item swiper-slide">
+                <div class="header">
+                  <div class="icon">
+                    <img src="'assets/public/assets/images/toys.svg" alt=""/>
+                  </div>
+                  <div class="line"></div>
+                  <div class="title">دپارتمان مهد و پیش دبستان</div>
+                </div>
+                <div class="content">
+                  <p>
+                    آموزش های کاملا کودکانه در زمینه های مکالمه زبان،
+                    فونیکس، داستان خوانی، کاردستی و دست ورزی، بازی های
+                    مهارتی، مدرسه طبیعت، آزمایشگاه علوم، کارگاه ریاضی ...
+                  </p>
+                </div>
+                <div class="link_wrapper">
+                  <a href="" class="arrow_link fi-arrow-left"></a>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="department_item swiper-slide">
+                <div class="header">
+                  <div class="icon">
+                    <img
+                      src="'assets/public/assets/images/abc-block.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="line"></div>
+                  <div class="title">دپارتمان انگلیسی</div>
+                </div>
+                <div class="content">
+                  <p>
+                    به طور کلی کلاس های آنلاین آکادمی زبان مهرداد در بستر
+                    آموزشی بیگ بلو باتن برگذار می شود که کاملا مشابه با کلاس
+                    های حضوری می باشد.
+                  </p>
+                </div>
+                <div class="link_wrapper">
+                  <a href="" class="arrow_link fi-arrow-left"></a>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="department_item swiper-slide">
+                <div class="header">
+                  <div class="icon">
+                    <img
+                      src="'assets/public/assets/images/paint-palette.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="line"></div>
+                  <div class="title">دپارتمان هنر</div>
+                </div>
+                <div class="content">
+                  <p>
+                    آموزش آنلاین مفاهیم ابتدایی موسیقی با شعر و آواز، آموزش
+                    ریتم خوانی، نواختن سازهای زایلوفن و فلوت ریکوردر و
+                    استعداد یابی برای انتخاب ساز تخصصی
+                  </p>
+                </div>
+                <div class="link_wrapper">
+                  <a href="" class="arrow_link fi-arrow-left"></a>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="department_item swiper-slide">
+                <div class="header">
+                  <div class="icon">
+                    <img
+                      src="'assets/public/assets/images/eiffel-tower.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="line"></div>
+                  <div class="title">دپارتمان فرانسه</div>
+                </div>
+                <div class="content">
+                  <p>
+                    دپارتمان فرانسه مهرداد با به کار گیری نوین ترین روش های
+                    تدریس زبان فرانسه با به کارگیری نوین ترین متود های
+                    کودکان فرانسه با روش های جذاب آموزشی همراه با بازی و
+                    آموزش غیر مستقیم، فرانسه رو به کوکان 3 سال تا 16 سال
+                    آموزش می دهد.
+                  </p>
+                </div>
+                <div class="link_wrapper">
+                  <span class="arrow_link fi-arrow-left"></span>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="department_item swiper-slide">
+                <div class="header">
+                  <div class="icon">
+                    <img
+                      src="'assets/public/assets/images/azadi-tower.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="line"></div>
+                  <div class="title">دپارتمان فارسی</div>
+                </div>
+                <div class="content">
+                  <p>
+                    آموزش آنلاین و موثر، تعاملی و شاد زبان فارسی و تسلط
+                    بیشتر به خواندن و نوشتن زبان مادری خردسالان و کودکان
+                    ساکن داخل و خارج از ایران
+                  </p>
+                </div>
+                <div class="link_wrapper">
+                  <a href="#" class="arrow_link fi-arrow-left"></a>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="department_item swiper-slide">
+                <div class="header">
+                  <div class="icon">
+                    <img src="'assets/public/assets/images/teacher.svg" alt=""/>
+                  </div>
+                  <div class="line"></div>
+                  <div class="title">دپارتمان تربیت مدرس</div>
+                </div>
+                <div class="content">
+                  <p>
+                    هدف اصلی این دوره ها آموزش و ارتقاء روش های تدریس زبان
+                    انگلیسی به گروه های سنی خردسالان، کودکان و نوجوانان است.
+                  </p>
+                </div>
+                <div class="link_wrapper">
+                  <span class="arrow_link fi-arrow-left"></span>
+                </div>
+              </div>
+            </ng-template>
+-->
+          </swiper>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>

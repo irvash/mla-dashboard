@@ -1,0 +1,206 @@
+<header class="main_header">
+  <div class="nav_modal">
+    <div class="modal_close">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav_wrapper">
+      <div class="modal_header">
+        <div class="cart_login_wrapper">
+          <div class="cart_link">
+            <a href="#" class="fi-shopping-cart">سبد خرید</a>
+          </div>
+          <div class="user_link">
+            <a href="login.html" class="fi-user">ورود کاربر</a>
+          </div>
+        </div>
+        <div class="search_wrapper">
+          <div class="search_block">
+            <div class="search_input">
+              <input type="text" placeholder="جستجو"/>
+            </div>
+            <div class="search_submit">
+              <input type="button" value=""/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal_body">
+        <div class="main_links_list_wrapper">
+          <ul class="main_links_list">
+            <li class="main_link_item">
+              <a href="#" class="main_link">خانـه</a>
+            </li>
+            <li class="main_link_item">
+              <a href="#" class="main_link">فروشگاه</a>
+            </li>
+            <li class="main_link_item">
+              <a href="#" class="main_link">نمایندگی ها</a>
+            </li>
+            <li class="main_link_item">
+              <a href="#" class="main_link">تماس با ما</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tree_links_wrapper">
+          <div class="category_branch">
+            <div class="category_title">
+              <span>دپارتمان ها</span>
+            </div>
+            <div class="category_links_list">
+              <div class="tree_link_block">
+                <a href="#" class="tree_link">مهد و پیش دبستان</a>
+              </div>
+              <div class="tree_link_block">
+                <a href="#" class="tree_link">انگلیسی ترمیک</a>
+              </div>
+              <div class="tree_link_block">
+                <a href="#" class="tree_link">فرانسه ترمیک</a>
+              </div>
+              <div class="tree_link_block has_sub">
+                <a href="#" class="tree_link">هنر</a>
+                <div class="subcategory_wrapper">
+                  <ul class="subcategory">
+                    <li class="sub_link_item">
+                      <a href="" class="sub_link tree_link"
+                      >نقاشی و خلاقیت</a
+                      >
+                    </li>
+                    <li class="sub_link_item">
+                      <a href="" class="sub_link tree_link"
+                      >موسیقی و ارف</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tree_link_block">
+                <a href="#" class="tree_link">تربیت مدرس</a>
+              </div>
+            </div>
+          </div>
+          <div class="category_branch">
+            <div class="category_title">
+              <span>درباره ما</span>
+            </div>
+            <div class="category_links_list">
+              <div class="tree_link_block">
+                <a href="#" class="tree_link">تاریخچه</a>
+              </div>
+              <div class="tree_link_block">
+                <a href="#" class="tree_link">اهداف ما</a>
+              </div>
+              <div class="tree_link_block">
+                <a href="#" class="tree_link">افتخارات</a>
+              </div>
+              <div class="tree_link_block has_sub">
+                <a href="#" class="tree_link">تیم ما</a>
+                <div class="subcategory_wrapper">
+                  <ul class="subcategory">
+                    <li class="sub_link_item">
+                      <a href="" class="sub_link tree_link">موسس</a>
+                    </li>
+                    <li class="sub_link_item">
+                      <a href="" class="sub_link tree_link">تیم اداری</a>
+                    </li>
+                    <li class="sub_link_item">
+                      <a href="" class="sub_link tree_link">تیم آموزشی</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="category_branch">
+            <div class="category_title">
+              <span>همکاری با ما</span>
+            </div>
+            <div class="category_links_list">
+              <div class="tree_link_block">
+                <a href="#" class="tree_link">نیروی اداری</a>
+              </div>
+              <div class="tree_link_block">
+                <a href="#" class="tree_link">نیروی آموزشی</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal_footer">
+        <div class="social_links_wrapper">
+          <div class="link_list">
+            <div class="social_link">
+              <a href="#" alt="twitter">
+                <img src="assets/public/assets/images/icon-twitter.svg"/>
+              </a>
+            </div>
+            <div class="social_link">
+              <a href="#" alt="youtube">
+                <img src="assets/public/assets/images/icon-youtube.svg"/>
+              </a>
+            </div>
+            <div class="social_link">
+              <a href="#" alt="linkedin">
+                <img src="assets/public/assets/images/icon-linkedin.svg"/>
+              </a>
+            </div>
+            <div class="social_link">
+              <a href="#" alt="instagram">
+                <img src="assets/public/assets/images/icon-instagram.svg"/>
+              </a>
+            </div>
+            <div class="social_link">
+              <a href="#" alt="facebook">
+                <img src="assets/public/assets/images/icon-facebook.svg"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="title_bar">
+    <div class="title_bar_block">
+      <span class="fi-pin"></span>
+      <span class="address_label">
+      <app-content-with-lang [data]="this.appConfig.aboutDto.address" [dataEn]="this.appConfig.aboutDto.addressEn">
+      </app-content-with-lang>
+     </span>
+    </div>
+    <div class="title_bar_block">
+      <span class="fi-phone"></span>
+      <span class="phone_label">
+      <app-content-with-lang [data]="this.appConfig.aboutDto.tell" [dataEn]="this.appConfig.aboutDto.tellEn">
+      </app-content-with-lang>
+    </span>
+    </div>
+  </div>
+  <div class="second_floor">
+    <div class="container">
+      <a href="#" class="logo_link inline_block">
+        <img [src]="this.appConfig.aboutDto.logoTop" alt="">
+      </a>
+      <div class="nav_wrapper">
+        <div class="nav_triggers relative flex">
+          <div class="handle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="lang_links_wrapper">
+            <a
+              (click)="this.changeLanguage('en')"
+              href="javascript:void(0)" id="en_lang_link" class="lang_switch_link">En</a>
+            <span class="seperator inline_block"></span>
+            <a href="javascript:void(0)"
+               (click)="this.changeLanguage('fa')"
+               id="fa_lang_link" class="lang_switch_link active"
+            >فا</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+

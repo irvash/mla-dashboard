@@ -1,0 +1,539 @@
+<div class="container">
+  <div class="anchors_wrapper">
+    <ul class="anchor_list"></ul>
+  </div>
+  <section class="hero_section">
+    <div class="wrapper x_margin_auto">
+      <div class="tweens_wrapper">
+        <div class="sibling_slogan tween_item">
+          <div class="content_wrapper">
+            <p class="since">تاسیس 1382</p>
+            <p class="slogan small_slogan">آموزش بهتر،</p>
+            <p class="slogan large_slogan">فردایی بهتر</p>
+            <div class="button_wrapper">
+              <a routerLink="/register" class="red_button register_button">
+
+                <!--                {{ "REGISTER" | translate:param }}-->
+                <!--                ثبت نام-->
+                {{ "REGISTER" | translate }}
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="sibling_blocks tween_item dir_ltr">
+          <div class="square_blocks_wrapper">
+            <div class="square_block abc_block">
+              <img src="assets/public/assets/images/abc-symbol.svg" alt="">
+            </div>
+            <div class="square_block pen_block">
+              <img src="assets/public/assets/images/pen.svg" alt="">
+            </div>
+            <div class="square_block"></div>
+            <div class="square_block document_block">
+              <img src="assets/public/assets/images/document.svg" alt="">
+            </div>
+            <div class="square_block"><span></span></div>
+            <div class="square_block video_block"><img src="assets/public/assets/images/video-thumbnail.svg" alt="">
+            </div>
+            <div class="square_block"></div>
+            <div class="square_block msg_block"><img src="assets/public/assets/images/msg-buble.svg" alt=""></div>
+            <div class="square_block"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero_slider_wrapper dir_ltr">
+        <app-carousel></app-carousel>
+
+        <!--
+                <div class="hero_slider">
+                  <div class="swiper-wrapper">
+                    <div class="item swiper-slide" style="background: rgb(32, 155, 185)">Hero Item 1</div>
+                    <div class="item swiper-slide" style="background: rgb(190, 179, 127)">Hero Item 2</div>
+                    <div class="item swiper-slide" style="background: rgb(163, 129, 194)">Hero Item 3</div>
+                  </div>
+                  <div class="hero_handles_wrapper flex">
+                    <div class="dots">
+                      <div class="hero-pagination"></div>
+                    </div>
+                    <div class="hero_button hero-button-prev fi-arrow-left"></div>
+                    <div class="hero_button hero-button-next fi-arrow-right"></div>
+                  </div>
+                </div>
+                -->
+      </div>
+      <div class="line_grey"></div>
+    </div>
+  </section>
+
+
+  <app-department-home></app-department-home>
+
+  <section class="slogan_section">
+    <div class="wrapper x_margin_auto">
+      <div class="slogan_wrapper">
+        <h1>آموزش بهتر فردایی بهتر</h1>
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="vision-section"
+    class="about_section"
+    data-section-title="چشم انداز"
+  >
+    <div class="wrapper x_margin_auto">
+      <div class="article_wrapper">
+        <h1 class="title">آموزش علمی و اثرگذار</h1>
+        <p>
+          فرزندان شما در سیستم آموزشی آکادمی زبان مهرداد تحت یک نظام علمی
+          و اثر گذار، از سن 3 تا 16 سالگی (خردسالان، کودکان و نوجوانان)،
+          انگلیسی را از ابتدا تا سطح پیشرفته در حین بازی می آموزند و قادر
+          خواهند بود تا در آزمون های بین المللی دانشگاه کمبریج افتخار
+          آفرین باشند.
+          <br/><br/>
+          در سیستم آموزشی آکادمی زبان مهرداد هدف تسلط کامل به زبان انگلیسی
+          به آسانی و روانی زبان فارسی است تا فرزندانمان آمادگی بیشتری جهت
+          ادامه تحصیل در مدرسه های بین المللی خارج از کشور و آزمون های
+          مدارس برتر ایران داشته باشند. رشد زبانی چشمگیر در همه زمینه های
+          گفتاری و شنیداری همزمان با توانایی خواندن انتقادی و نگارش خلاق
+          هدف اصلی دوره های غیر حضوری (آنلاین) و حضوری آکادمی زبان مهرداد
+          می باشد. برای رسیدن به همه این ها آکادمی زبان مهرداد مجرب ترین
+          مدرسان را استخدام می کند و با برگزاری کارگاه های هفتگی به صورت
+          مداوم پیشرفت علمی مدرسان و در نتیجه رشد چشمگیر زبان آموزی
+          فرزندان شما را تضمین می کند.
+        </p>
+      </div>
+      <div class="image_holder">
+        <img src="assets/public/assets/images/abc-symbol.svg" alt=""/>
+      </div>
+    </div>
+  </section>
+
+  <app-academy-home></app-academy-home>
+  <section id="faq-news-section" class="faq_news_section" data-section-title="اخبار و مقالات">
+    <div class="wrapper x_margin_auto flex">
+      <div class="faq_container section_tween_item">
+        <div class="title">
+          <span>سوالات متداول</span>
+        </div>
+        <div class="faq_list_wrapper">
+          <ul class="faq_list">
+            <li class="faq_item expanded">
+              <div class="question_title">
+                <span>بهترین زمان برای یادگیری زبان چه سنی است؟</span>
+              </div>
+              <div class="question_answer">
+                <p>بر اساس پژوهش های انجام شده توسط روانشناسان آموزشی، زبانشناسان و متخصصان کودک، بهترین سن یادگیری زبان
+                  دوم، سنین بین 2 تا
+                  5 سال است که از آن به عنوان دوران حیاتی (Critical Period) یاد می کنند. برای کسانی که زبان فارسی زبان
+                  اول و انگلیسی زبان
+                  دوم آنها می باشد، فراگیری زبان سوم از سن 8 سال توصیه می شود. آموزش آنلاین نیز در سنین زیر 7 سال با
+                  همراهی والدین و در
+                  سنین بالای 7 سال بدون نیاز به حضور والدین مفید و آموزنده و البته ضروری است. نوآموزان متولد سال های
+                  1380 به بعد از نظر
+                  متخصصان، بومی دنیای دیجیتال (Digital Native) شناخته شده اند و همین موضوع یادگیری زبان به صورت آنلاین
+                  را برای آنها جذاب و
+                  آسان می نماید.</p>
+              </div>
+            </li>
+            <li class="faq_item">
+              <div class="question_title">
+                <span>چرا آکادمی زبان مهرداد؟</span>
+              </div>
+              <div class="question_answer">
+                <p>بر اساس پژوهش های انجام شده توسط روانشناسان آموزشی، زبانشناسان و متخصصان کودک، بهترین سن یادگیری زبان
+                  دوم، سنین بین 2 تا
+                  5 سال است که از آن به عنوان دوران حیاتی (Critical Period) یاد می کنند. برای کسانی که زبان فارسی زبان
+                  اول و انگلیسی زبان
+                  دوم آنها می باشد، فراگیری زبان سوم از سن 8 سال توصیه می شود. آموزش آنلاین نیز در سنین زیر 7 سال با
+                  همراهی والدین و در
+                  سنین بالای 7 سال بدون نیاز به حضور والدین مفید و آموزنده و البته ضروری است. نوآموزان متولد سال های
+                  1380 به بعد از نظر
+                  متخصصان، بومی دنیای دیجیتال (Digital Native) شناخته شده اند و همین موضوع یادگیری زبان به صورت آنلاین
+                  را برای آنها جذاب و
+                  آسان می نماید.</p>
+              </div>
+            </li>
+            <li class="faq_item">
+              <div class="question_title">
+                <span>بعد از گذراندن چه سطحی فرزندم می تواند انگلیسی را آسان و روان صحبت کند؟</span>
+              </div>
+              <div class="question_answer">
+                <p>سطوح خردسالان به پایه ریزی توانمندی ها و رشد استعدادهای زبانی نوآموزان می پردازد و در همین سنین فرزند
+                  شما می تواند در
+                  مورد مباحث آشنا صحبت کند. در سطوح متوسط، پس از حداکثر 4 سال زبان آموزی از سطح صفر، کودکان می توانند در
+                  گفتگو های مختلف و
+                  بحث های آزاد براحتی شرکت نموده و به انگلیسی مقالات پنچ پاراگرافی (Five Paragraph Essay) بنویسند و در
+                  مدارس خارجی تحصیل
+                  کنند. با ورود به سنین نوجوانی و ادامه یادگیری، زبان آموزان قادر خواهند بود تا قبل از دوران متوسطه دوم
+                  به سطح پیشرفته
+                  زبان (Cambridge CAE-C1) برسند و انگلیسی را به آسانی و روانی فارسی صحبت کنند، بخوانند و بنویسند. در
+                  چنین سطحی برای ورود
+                  به مدرسه، دانشگاه و تحصیلات تکمیلی مطلقا مشکل زبانی نخواهند داشت. در مجموع طول دوره زبان آموزی از پایه
+                  تا پیشرفته شامل
+                  10 سطح می باشد و زبان آموزانی که از 7 سالگی شروع می کنند به طور پیوسته تا قبل از 16 سالگی به سطح زبانی
+                  انگلیسی زبان ها
+                  (Native) می رسند.</p>
+              </div>
+            </li>
+            <li class="faq_item">
+              <div class="question_title">
+                <span>بعد از گذراندن چه سطحی فرزندم می تواند انگلیسی را آسان و روان صحبت کند؟</span>
+              </div>
+              <div class="question_answer">
+                <p>سطوح خردسالان به پایه ریزی توانمندی ها و رشد استعدادهای زبانی نوآموزان می پردازد و در همین سنین فرزند
+                  شما می تواند در
+                  مورد مباحث آشنا صحبت کند. در سطوح متوسط، پس از حداکثر 4 سال زبان آموزی از سطح صفر، کودکان می توانند در
+                  گفتگو های مختلف و
+                  بحث های آزاد براحتی شرکت نموده و به انگلیسی مقالات پنچ پاراگرافی (Five Paragraph Essay) بنویسند و در
+                  مدارس خارجی تحصیل
+                  کنند. با ورود به سنین نوجوانی و ادامه یادگیری، زبان آموزان قادر خواهند بود تا قبل از دوران متوسطه دوم
+                  به سطح پیشرفته
+                  زبان (Cambridge CAE-C1) برسند و انگلیسی را به آسانی و روانی فارسی صحبت کنند، بخوانند و بنویسند. در
+                  چنین سطحی برای ورود
+                  به مدرسه، دانشگاه و تحصیلات تکمیلی مطلقا مشکل زبانی نخواهند داشت. در مجموع طول دوره زبان آموزی از پایه
+                  تا پیشرفته شامل
+                  10 سطح می باشد و زبان آموزانی که از 7 سالگی شروع می کنند به طور پیوسته تا قبل از 16 سالگی به سطح زبانی
+                  انگلیسی زبان ها
+                  (Native) می رسند.</p>
+              </div>
+            </li>
+            <li class="faq_item">
+              <div class="question_title">
+                <span>بعد از گذراندن چه سطحی فرزندم می تواند انگلیسی را آسان و روان صحبت کند؟</span>
+              </div>
+              <div class="question_answer">
+                <p>سطوح خردسالان به پایه ریزی توانمندی ها و رشد استعدادهای زبانی نوآموزان می پردازد و در همین سنین فرزند
+                  شما می تواند در
+                  مورد مباحث آشنا صحبت کند. در سطوح متوسط، پس از حداکثر 4 سال زبان آموزی از سطح صفر، کودکان می توانند در
+                  گفتگو های مختلف و
+                  بحث های آزاد براحتی شرکت نموده و به انگلیسی مقالات پنچ پاراگرافی (Five Paragraph Essay) بنویسند و در
+                  مدارس خارجی تحصیل
+                  کنند. با ورود به سنین نوجوانی و ادامه یادگیری، زبان آموزان قادر خواهند بود تا قبل از دوران متوسطه دوم
+                  به سطح پیشرفته
+                  زبان (Cambridge CAE-C1) برسند و انگلیسی را به آسانی و روانی فارسی صحبت کنند، بخوانند و بنویسند. در
+                  چنین سطحی برای ورود
+                  به مدرسه، دانشگاه و تحصیلات تکمیلی مطلقا مشکل زبانی نخواهند داشت. در مجموع طول دوره زبان آموزی از پایه
+                  تا پیشرفته شامل
+                  10 سطح می باشد و زبان آموزانی که از 7 سالگی شروع می کنند به طور پیوسته تا قبل از 16 سالگی به سطح زبانی
+                  انگلیسی زبان ها
+                  (Native) می رسند.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="faq_link">صفحه سوالات متداول</a>
+      </div>
+      <div class="news_container section_tween_item">
+        <div class="title_tabs_cta">
+          <div class="title active" data-key="news_list_wrapper">اخبار</div>
+          <div class="title" data-key="faq_list_wrapper">مقالات</div>
+        </div>
+        <div class="tabs_list_wrapper">
+          <div class="tab_list_holder news_list_wrapper active">
+            <ul class="news_list">
+              <li class="news_item">
+                <a href="#" class="item_link">
+                  <div class="img_holder">
+                    <img src="assets/public/assets/images/dummy/2022-02-01-19-25-mla.ir.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h3 class="title">رونمایی از محصول جدید آکادمی زبان مهرداد</h3>
+                    <div class="brief_text">
+                      <p>
+                        طی گذشت ۹ سال و استقبال همیشگی از کتاب های مجیک فانیکس، آکادمی زبان مهرداد امروز مفتخرست که از
+                        محصول
+                        آموزشی جدید خود رو
+                        نمایی کند.
+                        با توجه به افزایش اهمیت آموزش فانیکس در دهه گذشته مجموعه جدیدی از آموزش فانیکس به صورت فلش کارت
+                        آماده
+                        کرده ایم.
+                      </p>
+                    </div>
+                  </div>
+                  <span class="read_more_label">ادامه مطلب</span>
+                </a>
+              </li>
+              <li class="news_item">
+                <a href="#" class="item_link">
+                  <div class="img_holder">
+                    <img src="assets/public/assets/images/dummy/2022-02-01-19-25-mla.ir.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h3 class="title">رونمایی از محصول جدید آکادمی زبان مهرداد</h3>
+                    <div class="brief_text">
+                      <p>
+                        طی گذشت ۹ سال و استقبال همیشگی از کتاب های مجیک فانیکس، آکادمی زبان مهرداد امروز مفتخرست که از
+                        محصول
+                        آموزشی جدید خود رو
+                        نمایی کند.
+                        با توجه به افزایش اهمیت آموزش فانیکس در دهه گذشته مجموعه جدیدی از آموزش فانیکس به صورت فلش کارت
+                        آماده
+                        کرده ایم.
+                      </p>
+                    </div>
+                  </div>
+                  <span class="read_more_label">ادامه مطلب</span>
+                </a>
+              </li>
+              <li class="news_item">
+                <a href="#" class="item_link">
+                  <div class="img_holder">
+                    <img src="assets/public/assets/images/dummy/2022-02-01-19-25-mla.ir.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h3 class="title">رونمایی از محصول جدید آکادمی زبان مهرداد</h3>
+                    <div class="brief_text">
+                      <p>
+                        طی گذشت ۹ سال و استقبال همیشگی از کتاب های مجیک فانیکس، آکادمی زبان مهرداد امروز مفتخرست که از
+                        محصول
+                        آموزشی جدید خود رو
+                        نمایی کند.
+                        با توجه به افزایش اهمیت آموزش فانیکس در دهه گذشته مجموعه جدیدی از آموزش فانیکس به صورت فلش کارت
+                        آماده
+                        کرده ایم.
+                      </p>
+                    </div>
+                  </div>
+                  <span class="read_more_label">ادامه مطلب</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab_list_holder faq_list_wrapper">مقالات</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrapper x_margin_auto">
+    <div class="line_grey"></div>
+  </div>
+  <section
+    id="comments-section"
+    class="testimonials_section"
+    data-section-title="نظرات"
+  >
+    <div class="wrapper x_margin_auto">
+      <h1 class="title text_align_center">رضایتمندی</h1>
+      <div class="comments_carousel_wrapper">
+        <div class="comments_carousel dir_ltr">
+          <div class="swiper-wrapper">
+            <div class="comment_block swiper-slide">
+              <div class="user_info_wrapper">
+                <div class="user_img">
+                  <img
+                    src="assets/public/assets/images/dummy/peransa.png"
+                    alt=""
+                  />
+                </div>
+                <div class="user_info">
+                  <p>خانم سارا مرادی (مادر پرنسا نوری)</p>
+                </div>
+              </div>
+              <div class="comment_title">
+                <span>کادر مجرب و صمیمی</span>
+              </div>
+              <div class="comment_text">
+                <p>
+                  در طی یک سالی که پرنسا در کلاس های آکادمی زبان مهرداد
+                  درس می خواند، خیلی خیلی از پیشرفتش راضی هستم. در خانه
+                  پرنسا نیاز هایش را کاملا به زبان انگلیسی می گوید و
+                  پیشنهاد می کنم اگر شما هم تمایل دارید کودکتان دو زبانه
+                  شود، آکادمی زبان مهرداد را انتخاب کنید. اینجا در کنار
+                  زبان انگلیسی مهارت های دیگر مثل هنر و خلاقیت، ریاضی،
+                  علوم و فارسی هم آموزش داده می شود. کادر آکادمی مجرب و
+                  صمیمی است.
+                </p>
+              </div>
+            </div>
+            <div class="comment_block swiper-slide">
+              <div class="user_info_wrapper">
+                <div class="user_img">
+                  <img
+                    src="assets/public/assets/images/dummy/prof.png"
+                    alt=""
+                  />
+                </div>
+                <div class="user_info">
+                  <p>
+                    پروفسور حسین شاهمحمد استاد ریاضیات دانشگاه آمریکا (پدر
+                    شایان)
+                  </p>
+                </div>
+              </div>
+              <div class="comment_title">
+                <span>پیشرفت غیر قابل تصور</span>
+              </div>
+              <div class="comment_text">
+                <p>
+                  روزی که به آکادمی زبان مهرداد وارد شدیم مطمئن بودیم که
+                  آینده شایان در حال تغییر است. تیم آکادمی زبان مهرداد
+                  برای همیشه زندگی علمی فرزند من را تغییر داد. در مدت کمتر
+                  از شش هفته، شایان توانست الفبا، فونیکس، خواندن و نوشتن
+                  انگلیسی را (با کتابهای مجیک فونیکس) بیاموزد. آکادمی به
+                  شکل غیر قابل تصوری کاری که پدر مادر، مدرسان و مدرسه
+                  آمریکایی شایان نتوانستند انجام دهد برای فرزندم انجام
+                  داد.
+                </p>
+              </div>
+            </div>
+            <div class="comment_block swiper-slide">
+              <div class="user_info_wrapper">
+                <div class="user_img">
+                  <img
+                    src="assets/public/assets/images/dummy/yasaman.png"
+                    alt=""
+                  />
+                </div>
+                <div class="user_info">
+                  <p>
+                    خانم یاسمن شتابی (دانش آموخته آکادمی 1383-1386) و
+                    معاون مدرسه Glory Singapore International School
+                  </p>
+                </div>
+              </div>
+              <div class="comment_title">
+                <span>کادر مجرب و صمیمی</span>
+              </div>
+              <div class="comment_text">
+                <p>
+                  در طی یک سالی که پرنسا در کلاس های آکادمی زبان مهرداد
+                  درس می خواند، خیلی خیلی از پیشرفتش راضی هستم. در خانه
+                  پرنسا نیاز هایش را کاملا به زبان انگلیسی می گوید و
+                  پیشنهاد می کنم اگر شما هم تمایل دارید کودکتان دو زبانه
+                  شود، آکادمی زبان مهرداد را انتخاب کنید. اینجا در کنار
+                  زبان انگلیسی مهارت های دیگر مثل هنر و خلاقیت، ریاضی،
+                  علوم و فارسی هم آموزش داده می شود. کادر آکادمی مجرب و
+                  صمیمی است.
+                </p>
+              </div>
+            </div>
+            <div class="comment_block swiper-slide">
+              <div class="user_info_wrapper">
+                <div class="user_img">
+                  <img
+                    src="assets/public/assets/images/dummy/peransa.png"
+                    alt=""
+                  />
+                </div>
+                <div class="user_info">
+                  <p>خانم سارا مرادی (مادر پرنسا نوری)</p>
+                </div>
+              </div>
+              <div class="comment_title">
+                <span>کادر مجرب و صمیمی</span>
+              </div>
+              <div class="comment_text">
+                <p>
+                  در طی یک سالی که پرنسا در کلاس های آکادمی زبان مهرداد
+                  درس می خواند، خیلی خیلی از پیشرفتش راضی هستم. در خانه
+                  پرنسا نیاز هایش را کاملا به زبان انگلیسی می گوید و
+                  پیشنهاد می کنم اگر شما هم تمایل دارید کودکتان دو زبانه
+                  شود، آکادمی زبان مهرداد را انتخاب کنید. اینجا در کنار
+                  زبان انگلیسی مهارت های دیگر مثل هنر و خلاقیت، ریاضی،
+                  علوم و فارسی هم آموزش داده می شود. کادر آکادمی مجرب و
+                  صمیمی است.
+                </p>
+              </div>
+            </div>
+            <div class="comment_block swiper-slide">
+              <div class="user_info_wrapper">
+                <div class="user_img">
+                  <img
+                    src="assets/public/assets/images/dummy/prof.png"
+                    alt=""
+                  />
+                </div>
+                <div class="user_info">
+                  <p>
+                    پروفسور حسین شاهمحمد استاد ریاضیات دانشگاه آمریکا (پدر
+                    شایان)
+                  </p>
+                </div>
+              </div>
+              <div class="comment_title">
+                <span>پیشرفت غیر قابل تصور</span>
+              </div>
+              <div class="comment_text">
+                <p>
+                  روزی که به آکادمی زبان مهرداد وارد شدیم مطمئن بودیم که
+                  آینده شایان در حال تغییر است. تیم آکادمی زبان مهرداد
+                  برای همیشه زندگی علمی فرزند من را تغییر داد. در مدت کمتر
+                  از شش هفته، شایان توانست الفبا، فونیکس، خواندن و نوشتن
+                  انگلیسی را (با کتابهای مجیک فونیکس) بیاموزد. آکادمی به
+                  شکل غیر قابل تصوری کاری که پدر مادر، مدرسان و مدرسه
+                  آمریکایی شایان نتوانستند انجام دهد برای فرزندم انجام
+                  داد.
+                </p>
+              </div>
+            </div>
+            <div class="comment_block swiper-slide">
+              <div class="user_info_wrapper">
+                <div class="user_img">
+                  <img
+                    src="assets/public/assets/images/dummy/yasaman.png"
+                    alt=""
+                  />
+                </div>
+                <div class="user_info">
+                  <p>
+                    خانم یاسمن شتابی (دانش آموخته آکادمی 1383-1386) و
+                    معاون مدرسه Glory Singapore International School
+                  </p>
+                </div>
+              </div>
+              <div class="comment_title">
+                <span>کادر مجرب و صمیمی</span>
+              </div>
+              <div class="comment_text">
+                <p>
+                  در طی یک سالی که پرنسا در کلاس های آکادمی زبان مهرداد
+                  درس می خواند، خیلی خیلی از پیشرفتش راضی هستم. در خانه
+                  پرنسا نیاز هایش را کاملا به زبان انگلیسی می گوید و
+                  پیشنهاد می کنم اگر شما هم تمایل دارید کودکتان دو زبانه
+                  شود، آکادمی زبان مهرداد را انتخاب کنید. اینجا در کنار
+                  زبان انگلیسی مهارت های دیگر مثل هنر و خلاقیت، ریاضی،
+                  علوم و فارسی هم آموزش داده می شود. کادر آکادمی مجرب و
+                  صمیمی است.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="comments-pagination text_align_center"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    id="newsletter-section"
+    class="newsletter_section"
+    data-section-title="خبرنامه"
+  >
+    <div class="wrapper x_margin_auto">
+      <div class="newsletter_wrapper">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="input_text"
+          placeholder="نام خود را وارد نمایید"
+        />
+        <input
+          type="email"
+          name=""
+          id=""
+          class="input_text"
+          placeholder="ایمیل خود را وارد نمایید"
+        />
+        <input
+          type="button"
+          value="عضو میشوم"
+          class="register_btn red_button"
+        />
+      </div>
+    </div>
+  </section>
+</div>

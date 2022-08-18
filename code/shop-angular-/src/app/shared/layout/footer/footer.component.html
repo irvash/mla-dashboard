@@ -1,0 +1,120 @@
+<footer class="main_footer">
+  <div class="footer_sections_wrapper">
+    <div class="footer_section contact_section">
+      <div class="address_section">
+        <div class="logo_wrapper">
+          <img [src]="this.getAppConfig.aboutDto.logoDown" alt="">
+          <span class="slogan">Better Education Better Tomorrow</span>
+        </div>
+        <div class="contact_list">
+          <div class="contact_item">
+                  <span class="fi-pin">
+                    {{this.contentWithLanguage(this.getAppConfig.aboutDto.address, this.getAppConfig.aboutDto.addressEn)}}
+                  </span>
+          </div>
+          <div class="contact_item">
+            <span class="fi-phone">
+          {{this.contentWithLanguage(this.getAppConfig.aboutDto.tell, this.getAppConfig.aboutDto.tellEn)}}
+            </span>
+          </div>
+          <div class="contact_item">
+            <span class="fi-email">
+              <app-content-with-lang [data]="this.apiService.getAppConfig.aboutDto.email"
+                                     [dataEn]="this.apiService.getAppConfig.aboutDto.emailEn">
+            </app-content-with-lang>
+
+            </span>
+          </div>
+        </div>
+        <div class="social_links_wrapper">
+          <div class="social_link">
+            <a
+              href="{{this.contentWithLanguage(this.getAppConfig.aboutDto.twitter,this.getAppConfig.aboutDto.twitterEn)}}"
+              alt="twitter" target="_blank">
+              <img src="assets/public/assets/images/icon-twitter.svg">
+            </a>
+          </div>
+          <div class="social_link">
+            <a
+              href="{{this.contentWithLanguage(this.getAppConfig.aboutDto.youtube,this.getAppConfig.aboutDto.youtubeEn)}}"
+              alt="youtube">
+              <img src="assets/public/assets/images/icon-youtube.svg">
+            </a>
+          </div>
+          <div class="social_link">
+            <a
+              href="{{this.contentWithLanguage(this.getAppConfig.aboutDto.linkedIn,this.getAppConfig.aboutDto.linkedInEn)}}"
+              alt="linkedin">
+              <img src="assets/public/assets/images/icon-linkedin.svg">
+            </a>
+          </div>
+          <div class="social_link">
+            <a
+              href="{{this.contentWithLanguage(this.getAppConfig.aboutDto.instagram,this.getAppConfig.aboutDto.instagramEn)}}"
+              alt="instagram">
+              <img src="assets/public/assets/images/icon-instagram.svg">
+            </a>
+          </div>
+          <div class="social_link">
+            <a
+              href="{{this.contentWithLanguage(this.getAppConfig.aboutDto.facebook,this.getAppConfig.aboutDto.facebookEn)}}"
+              alt="facebook">
+              <img src="assets/public/assets/images/icon-facebook.svg">
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="map_section">
+        <!--        class="map_wrapper"-->
+        <div>
+          <ng-container
+            *ngIf="this.translate.currentLang === this.getEnumLanguage.fa && !this.isNullOrEmpty(getAppConfig.aboutDto.googleMap)">
+            <iframe
+              [src]="this.cleanURL(this.getAppConfig.aboutDto.googleMap)"
+              width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+          </ng-container>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer_section hotlinks_section">
+      <div class="inner_wrapper">
+        <div class="hotlinks_list">
+          <div class="title">پیوندها</div>
+          <div class="list_wrapper">
+            <a href="#" class="hotlink">ثبت نام</a>
+            <a href="#" class="hotlink">درباره ما</a>
+            <a href="#" class="hotlink">اخبار و مقالات</a>
+            <a href="#" class="hotlink">تیم آموزشی</a>
+            <a href="#" class="hotlink">تماس با ما</a>
+            <a href="#" class="hotlink">سوالات متداول</a>
+            <a href="#" class="hotlink">گالری تصاویر</a>
+          </div>
+        </div>
+        <div class="hotlinks_list">
+          <div class="title">دوره ها</div>
+          <div class="list_wrapper">
+            <a href="#" class="hotlink">مهد زبان و پیش دبستان حضوری </a>
+            <a href="#" class="hotlink">انگلیسی خردسالان 3 تا 6 سال </a>
+            <a href="#" class="hotlink">فونیکس کودکان 7 تا 12 سال </a>
+            <a href="#" class="hotlink">انگلیسی کودکان 7 تا 12 سال </a>
+            <a href="#" class="hotlink">انگلیسی نوجوانان 13 تا 16 سال </a>
+            <a href="#" class="hotlink">فارسی خردسالان 3 تا 8 سال </a>
+            <a href="#" class="hotlink">موسیقی ارف خردسالان 4 تا 7 سال</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright_wrapper flex flex_row">
+    <div class="copyright_text flex_grow_1">
+      © تمامی حقوق نزد آکادمی زبان مهرداد محفوظ است
+    </div>
+    <div class="credentials flex_grow_1 dir_ltr">enamad</div>
+  </div>
+</footer>
+

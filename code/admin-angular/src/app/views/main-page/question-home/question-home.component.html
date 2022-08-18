@@ -1,0 +1,148 @@
+<c-row ngPreserveWhitespaces>
+  <c-col xs="12">
+    <c-card class="mb-4">
+      <c-card-header>
+        <strong>سوال های متداول</strong>
+      </c-card-header>
+      <c-card-body>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mb-4">
+              <button class="btn btn-dark" (click)="this.addNew()">جدید</button>
+              <button class="btn btn-info" (click)="this.loadItems()">بازیابی</button>
+            </div>
+            <ng-container [ngTemplateOutlet]="grid"></ng-container>
+          </div>
+        </div>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>
+
+<ng-template #grid>
+
+  <kendo-grid
+    [kendoGridBinding]="this.gridData"
+    [pageSize]="10"
+    [pageable]="true"
+    [sortable]="true"
+    [filterable]="false"
+    [groupable]="false"
+    [height]="420"
+  >
+    <kendo-grid-column title="ردیف" [width]="70">
+      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+        {{rowIndex + 1}}
+      </ng-template>
+    </kendo-grid-column>
+
+    <kendo-grid-column field="lang" title="زبان" [width]="140">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <span *ngIf="dataItem.lang == 1">فارسی</span>
+        <span *ngIf="dataItem.lang == 2">English</span>
+      </ng-template>
+    </kendo-grid-column>
+
+
+    <kendo-grid-column field="title" title="عنوان" [width]="140"></kendo-grid-column>
+
+
+
+    <kendo-grid-column field="description" title="توضیحات" [width]="120">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        {{dataItem.description}}
+      </ng-template>
+    </kendo-grid-column>
+
+
+    <kendo-grid-column field="orderShow" title="ترتیب نمایش" [width]="50">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <strong>{{dataItem.orderShow}}</strong>
+      </ng-template>
+    </kendo-grid-column>
+
+
+    <kendo-grid-column field="picName" title="عملیات" [width]="120">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <div class="text-center">
+          <button class="margin-left-5" themeColor="warning" kendoButton size="small"
+                  (click)="this.editModal(dataItem)">ویرایش
+          </button>
+          <button themeColor="error" kendoButton size="small" (click)="this.delete(dataItem)">حذف</button>
+        </div>
+      </ng-template>
+    </kendo-grid-column>
+  </kendo-grid>
+</ng-template>
+
+
+<ng-template #itemModal>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">
+      اسلایدر
+    </h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="this.closeModal()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-select-language
+      [class.disabledDiv]="!this.isNullOrEmptyOr0(this.model.id)"
+      [lang]="this.model.lang" (langChange)="this.model.lang = $event"></app-select-language>
+
+    <div class="row">
+      <app-custom-input-lang
+        [lang]="this.model.lang"
+        [isRequired]="true"
+        [typeInput]="this.getEnumTypeInput.text"
+        [titleNameEn]="'Title'"
+        [titleName]="'عنوان'"
+        [(modelName)]="this.model.title"
+      ></app-custom-input-lang>
+    </div>
+
+    <div class="row">
+      <app-custom-input-lang
+        [lang]="this.model.lang"
+        [isRequired]="true"
+        [typeInput]="this.getEnumTypeInput.textarea"
+        [titleName]="'توضیحات '"
+        [titleNameEn]="'Description'"
+        [(modelName)]="this.model.description"
+      ></app-custom-input-lang>
+    </div>
+
+
+    <div class="row">
+      <app-custom-input-lang
+        [lang]="this.model.lang"
+        [typeInput]="this.getEnumTypeInput.number"
+        [titleName]="'ترتیب نمایش'"
+        [titleNameEn]="'Order to show'"
+        [(modelName)]="this.model.orderShow"
+      ></app-custom-input-lang>
+    </div>
+
+
+    <hr>
+
+    <app-show-error-list [errorsListForPage]="this.errorsListForPage"></app-show-error-list>
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <button class="btn btn-success margin-left-5" style="margin-left: 5px" (click)="this.addOrUpdateAcademy()">
+          ذخیره
+        </button>
+        <button class="btn btn-warning margin-left-5" (click)="this.closeModal()">انصراف</button>
+      </div>
+    </div>
+
+
+  </div>
+
+</ng-template>
+
+
+
+

@@ -1,0 +1,81 @@
+<div class="row">
+  <div class="col-sm-6">
+    <c-row class="mb-3">
+      <label cLabel class="col-sm-4 col-form-label" [for]="modelName">
+        {{this.titleName}}:
+        <span class="isRequired" *ngIf="this.isRequired === true">*</span>
+      </label>
+      <div class="col-sm-8">
+
+        <ng-container *ngIf="this.typeInput ===this.getEnumTypeInput.textarea">
+          <textarea
+            [(ngModel)]="modelName"
+            #dateI
+            (input)="inputEvent(dateI.value)"
+            (change)="changeEvent(dateI.value)" (ngModelChange)="ngModelChangeEvent(dateI.value)"
+            name="{{modelName}}"
+            [id]="modelName"
+            [class]="'form-control '+styleValue"
+            rows="4"></textarea>
+        </ng-container>
+
+        <ng-container *ngIf="this.typeInput !==this.getEnumTypeInput.textarea">
+          <input
+            [(ngModel)]="modelName"
+            #dateI
+            (input)="inputEvent(dateI.value)"
+            (change)="changeEvent(dateI.value)" (ngModelChange)="ngModelChangeEvent(dateI.value)"
+            name="{{modelName}}"
+            [id]="modelName"
+            [class]="'form-control '+styleValue"
+            type="{{typeInput}}"
+          />
+        </ng-container>
+
+
+      </div>
+    </c-row>
+  </div>
+  <div class="col-sm-6" *ngIf="!this.isNullOrEmpty(this.titleNameEn)">
+    <c-row class="mb-3">
+
+      <div class="col-sm-8">
+        <ng-container *ngIf="this.typeInput ===this.getEnumTypeInput.textarea">
+          <textarea
+            [(ngModel)]="modelNameEn"
+            #data3
+            (input)="inputEventEn(data3.value)"
+            (change)="changeEventEn(data3.value)" (ngModelChange)="ngModelChangeEventEn(data3.value)"
+            name="{{modelNameEn}}"
+            [id]="modelNameEn"
+            class="form-control ltr"
+            rows="4"></textarea>
+        </ng-container>
+
+        <ng-container *ngIf="this.typeInput !==this.getEnumTypeInput.textarea">
+          <input
+            [(ngModel)]="modelNameEn"
+            #data3
+            (input)="inputEventEn(data3.value)"
+            (change)="changeEventEn(data3.value)" (ngModelChange)="ngModelChangeEventEn(data3.value)"
+            name="{{modelNameEn}}"
+            [id]="modelNameEn"
+            class="form-control ltr"
+            type="{{typeInput}}"
+          />
+        </ng-container>
+
+
+      </div>
+
+      <label cLabel class="col-sm-4 col-form-label ltr" [for]="modelNameEn">
+        {{titleNameEn}}:
+        <span class="isRequired" *ngIf="this.isRequiredEn === true">*</span>
+      </label>
+
+
+    </c-row>
+  </div>
+</div>
+
+

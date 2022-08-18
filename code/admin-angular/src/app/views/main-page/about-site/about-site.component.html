@@ -1,0 +1,232 @@
+<c-row ngPreserveWhitespaces>
+  <c-col xs="12">
+    <c-card class="mb-4">
+      <c-card-header>
+        <strong>مشخصات وب سایت</strong>
+      </c-card-header>
+      <c-card-body>
+
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'مشخصات وب سایت'" [(modelName)]="this.model.nameSite"
+            [titleNameEn]="'Web site name:'" [(modelNameEn)]="this.model.nameSiteEn"
+          ></app-custom-input>
+        </div>
+
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'آدرس'" [(modelName)]="this.model.address"
+            [titleNameEn]="'Address'" [(modelNameEn)]="this.model.addressEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'تلفن'" [(modelName)]="this.model.tell" [styleValue]="'ltr'"
+            [titleNameEn]="'Tell'" [(modelNameEn)]="this.model.tellEn"
+          ></app-custom-input>
+        </div>
+
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'ایمیل'" [(modelName)]="this.model.email" [styleValue]="'ltr'"
+            [titleNameEn]="'Email'" [(modelNameEn)]="this.model.emailEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.textarea"
+            [titleName]="'توضیحات'" [(modelName)]="this.model.descriptionSite"
+            [titleNameEn]="'Description'" [(modelNameEn)]="this.model.descriptionSiteEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'Instagram'" [(modelName)]="this.model.instagram" [styleValue]="'ltr'"
+            [titleNameEn]="'Instagram'" [(modelNameEn)]="this.model.instagramEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'Facebook'" [(modelName)]="this.model.facebook" [styleValue]="'ltr'"
+            [titleNameEn]="'Facebook'" [(modelNameEn)]="this.model.facebookEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'Telegram'" [(modelName)]="this.model.telegram" [styleValue]="'ltr'"
+            [titleNameEn]="'Telegram'" [(modelNameEn)]="this.model.telegramEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'Twitter'" [(modelName)]="this.model.twitter" [styleValue]="'ltr'"
+            [titleNameEn]="'Twitter'" [(modelNameEn)]="this.model.twitterEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'Youtube'" [(modelName)]="this.model.youtube" [styleValue]="'ltr'"
+            [titleNameEn]="'Youtube'" [(modelNameEn)]="this.model.youtubeEn"
+          ></app-custom-input>
+        </div>
+
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'LinkedIn'" [(modelName)]="this.model.linkedIn" [styleValue]="'ltr'"
+            [titleNameEn]="'LinkedIn'" [(modelNameEn)]="this.model.linkedInEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'WhatsApp'" [(modelName)]="this.model.whatsApp" [styleValue]="'ltr'"
+            [titleNameEn]="'WhatsApp'" [(modelNameEn)]="this.model.whatsAppEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'WhatsApp'" [(modelName)]="this.model.whatsApp" [styleValue]="'ltr'"
+            [titleNameEn]="'WhatsApp'" [(modelNameEn)]="this.model.whatsAppEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <app-custom-input
+            [typeInput]="this.getEnumTypeInput.text"
+            [titleName]="'آدرس شرکت از گوکل مپ'" [(modelName)]="this.model.googleMap" [styleValue]="'ltr'"
+            [titleNameEn]="'Google Map Address'" [(modelNameEn)]="this.model.googleMapEn"
+          ></app-custom-input>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <c-row class="mb-3">
+              <label cLabel class="col-sm-4 col-form-label">
+                نمایش نقشه
+              </label>
+              <div class="col-sm-8">
+                <ng-container *ngIf="!this.isNullOrEmpty(this.model.googleMap)">
+                  <iframe
+                    width="350"
+                    height="200"
+                    [src]="cleanURL(model.googleMap)"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </ng-container>
+              </div>
+            </c-row>
+          </div>
+
+          <div class="col-sm-6">
+            <c-row class="mb-3">
+
+              <div class="col-sm-8 ltr">
+                <ng-container *ngIf="!this.isNullOrEmpty(this.model.googleMapEn)">
+                  <iframe
+
+                    width="350"
+                    height="200"
+                    [src]="cleanURL(model.googleMapEn)"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </ng-container>
+              </div>
+
+              <label cLabel class="col-sm-4 col-form-label ltr">
+                Show Map
+              </label>
+            </c-row>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <c-row class="mb-3">
+              <label cLabel class="col-sm-4 col-form-label">
+                لوگوی بالای صفحه
+              </label>
+              <div class="col-sm-8">
+                <app-file-upload
+                  [readOnly]="false"
+                  [fileName]="this.model.logoTop"
+                  (fileNameOut)="this.model.logoTop = $event"
+                  (fileListOut)=" this.logoTopFileList = $event"
+                >
+                </app-file-upload>
+              </div>
+            </c-row>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <c-row class="mb-3">
+              <label cLabel class="col-sm-4 col-form-label">
+                لوگوی پایین صفحه
+              </label>
+              <div class="col-sm-8">
+                <app-file-upload
+                  [readOnly]="false"
+                  [fileName]="this.model.logoDown"
+                  (fileNameOut)="this.model.logoDown = $event"
+                  (fileListOut)=" this.logoDownFileList = $event"
+                >
+                </app-file-upload>
+              </div>
+            </c-row>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <button
+              (click)="this.editAbout()"
+              class="btn btn-warning">ویرایش
+            </button>
+
+
+            <button
+              (click)="this.getAbout()"
+              class="btn btn-info">بازیابی
+            </button>
+          </div>
+
+        </div>
+
+
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>
+

@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+// If you want to override variables do it here
+@import "variables";
+
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import styles with default layout.
+@import "~@coreui/coreui/scss/coreui";
+
+// Import Chart.js custom tooltips styles
+@import "~@coreui/chartjs/scss/coreui-chartjs";
+
+// perfect scrollbar theming for use with [perfectScrollbar] directive
+//@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+
+@import "layout";
+
+// Some temp fixes
+@import "fixes";
+
+// Prism.js
+@import "examples";
+
+// If you want to add something do it here
+@import "custom";
+
+//@font-face {
+//  font-family: "IRAN Sans";
+//  src: url("//db.onlinewebfonts.com/t/0b0a8c345731751b990403a2cf40fbec.eot");
+//  src: url("//db.onlinewebfonts.com/t/0b0a8c345731751b990403a2cf40fbec.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0b0a8c345731751b990403a2cf40fbec.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0b0a8c345731751b990403a2cf40fbec.woff") format("woff"), url("//db.onlinewebfonts.com/t/0b0a8c345731751b990403a2cf40fbec.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0b0a8c345731751b990403a2cf40fbec.svg#IRAN Sans") format("svg");
+//}
+//
+//body {
+//  font-family: 'IRAN Sans' !important;;
+//}
+
+@import "~@progress/kendo-theme-default/dist/all.css";
+
+//@import url(//db.onlinewebfonts.com/c/0b0a8c345731751b990403a2cf40fbec?family=IRAN+Sans);
+
+
+
+.ltr {
+  direction: ltr !important;
+}
+
+.isRequired {
+  color: red;
+  font-weight: bold;
+}
+
+.margin-left-5 {
+  margin-left: 5px;
+}
+
+.disabledDiv {
+  pointer-events: none;
+  opacity: 0.4;
+}

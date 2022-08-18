@@ -1,0 +1,39 @@
+<div class="form-group">
+  <label class="control-label" for="fileAsad">
+<!--    فایل :-->
+    <span style="color: red" *ngIf="isRequired === true">*</span>
+  </label>
+
+  <input id="fileAsad" style="display: none"
+         (change)="fileChange($event)"
+         #fileInputTechnical
+         type="file"
+         class="form-control" name="screenshot">
+
+  <button
+    *ngIf="readOnly === false"
+    style="margin-right: 3px"
+    class="btn  btn-primary mr-3" (click)="fileInputTechnical.click()">
+    انتخاب
+    فایل
+  </button>
+
+  <button *ngIf="!isNullOrEmpty(fileName)"
+          class="btn  btn-info " style="margin-right: 3px"
+          (click)="openFile(fileName)">مشاهده
+  </button>
+  <span *ngIf="this.readOnly === true && isNullOrEmpty(fileName)">ندارد</span>
+
+  <button *ngIf=" readOnly === false &&  (fileInputTechnical?.files?.length > 0 || !isNullOrEmpty(fileName )) "
+          class="btn  btn-danger "
+          style="margin-right: 3px"
+          (click)="removeFile()">حذف فایل
+  </button>
+  <br>
+
+
+  <ng-container *ngIf="fileInputTechnical">
+    {{fileInputTechnical?.files[0]?.name}}
+  </ng-container>
+
+</div>
